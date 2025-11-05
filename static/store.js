@@ -2,19 +2,11 @@ const store = $store(
 	{
 		url: "https://google.com",
 		wispurl:
-			_CONFIG?.wispurl ||
-			(location.protocol === "https:" ? "wss" : "ws") +
-				"://" +
-				location.host +
-				"/wisp/",
+			_CONFIG?.wispurl || "wss://gointospace.app/wisp/",
 		bareurl:
-			_CONFIG?.bareurl ||
-			(location.protocol === "https:" ? "https" : "http") +
-				"://" +
-				location.host +
-				"/bare/",
+			_CONFIG?.bareurl || null,
 		proxy: "",
-		transport: "/epoxy/index.mjs",
+		transport: "https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport/dist/index.mjs",
 	},
 	{ ident: "settings", backing: "localstorage", autosave: "auto" }
 );

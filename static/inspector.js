@@ -402,7 +402,7 @@ class RequestInspector {
                 <tr data-request-id="${request.id}" class="${this.selectedRequest && this.selectedRequest.id === request.id ? "selected" : ""}">
                     <td>
                         <div class="request-info">
-                            <img src="https://cdn.jsdelivr.net/gh/aerialitelabs/scramjet-static@latest/static/devtoolsimgs/${iconInfo.icon}" class="request-icon ${iconInfo.class}" alt="">
+                            <img src="https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/static/devtoolsimgs/${iconInfo.icon}" class="request-icon ${iconInfo.class}" alt="">
                             <span class="request-name">${this.getRequestName(request.url) || "-"}</span>
                         </div>
                     </td>

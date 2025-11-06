@@ -3,9 +3,9 @@ const { ScramjetController } = $scramjetLoadController();
 
 const scramjet = new ScramjetController({
 	files: {
-		wasm: "https://cdn.jsdelivr.net/gh/aerialitelabs/scramjet-static@latest/dist/scramjet.wasm.wasm",
-		all: "https://cdn.jsdelivr.net/gh/aerialitelabs/scramjet-static@latest/dist/scramjet.all.js",
-		sync: "https://cdn.jsdelivr.net/gh/aerialitelabs/scramjet-static@latest/dist/scramjet.sync.js",
+		wasm: "https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.wasm.wasm",
+		all: "https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.all.js",
+		sync: "https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.sync.js",
 	},
 	flags: {
 		rewriterLogs: false,
@@ -265,7 +265,7 @@ window.addEventListener("load", async () => {
 
 		return btoa(binary);
 	}
-	const arraybuffer = await (await fetch("https://cdn.jsdelivr.net/gh/aerialitelabs/scramjet-static@latest/assets/scramjet.png")).arrayBuffer();
+	const arraybuffer = await (await fetch("https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/assets/scramjet.png")).arrayBuffer();
 	console.log(
 		"%cb",
 		`
